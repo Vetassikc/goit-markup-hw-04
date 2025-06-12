@@ -49,6 +49,9 @@ img {
 /* Хедер */
 .header {
     border-bottom: 1px solid #e7e9fc;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -94,7 +97,7 @@ img {
     text-decoration: none;
     padding: 24px 0;
     display: block;
-    transition: color 0.25s ease, border-bottom 0.25s ease;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-bottom: 2px solid transparent;
 }
 
@@ -140,7 +143,7 @@ img {
     text-decoration: none;
     padding: 24px 0;
     display: block;
-    transition: color 0.25s ease;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -154,11 +157,8 @@ img {
     max-width: 1440px;
     margin: 0 auto;
     background-color: #2e2f42;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-        ),
-    url(../images/people-office\ 1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -367,12 +367,6 @@ section:nth-child(2) ul li {
             0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-link {
-    display: block;
-    /* Щоб посилання займало весь простір картки */
-    text-decoration: none;
-    /* Прибираємо підкреслення */
-}
 
 /* Контейнер для зображення та оверлею */
 .portfolio-image-wrap {
@@ -383,27 +377,24 @@ section:nth-child(2) ul li {
 
 /* Стилі для оверлею */
 .portfolio-overlay {
-    position: absolute;
+position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #4d5ae5;
-    color: #f4f4fd;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: #f4f4fd;
     padding: 40px 32px;
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
     margin: 0;
     transform: translateY(100%);
-    /* Ховаємо оверлей знизу */
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Ефект при наведенні */
 .portfolio-item:hover .portfolio-overlay {
     transform: translateY(0);
-    /* Повертаємо оверлей на місце */
 }
 
 .portfolio-item img {
@@ -473,4 +464,17 @@ section:nth-child(2) ul li {
     font-weight: 500;
     color: #ffffff;
     margin-bottom: 16px;
+}
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social-list {
+    gap: 16px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: #31d0aa;
 }
