@@ -433,7 +433,6 @@ position: absolute;
 
 .footer-logo {
     display: inline-block;
-    margin-bottom: 16px;
     color: #4D5AE5;
 }
 
@@ -462,7 +461,6 @@ position: absolute;
 .footer-social-title {
     font-weight: 500;
     color: #ffffff;
-    margin-bottom: 16px;
 }
 .social-list {
     display: flex;
