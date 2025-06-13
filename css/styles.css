@@ -46,6 +46,10 @@ img {
     padding-bottom: 120px;
 }
 
+p {
+    margin: 0;
+}
+
 /* Хедер */
 .header {
     border-bottom: 1px solid #e7e9fc;
