@@ -43,7 +43,7 @@ img {
 
 .section {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 0;
 }
 
 p {
@@ -313,7 +313,7 @@ section:nth-child(2) ul li {
     letter-spacing: 0.02em;
     color: #434455;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 8px;
 }
 
 .social-list {
@@ -364,7 +364,6 @@ section:nth-child(2) ul li {
 
 .portfolio-item:hover,
 .portfolio-item:focus-within {
-    border: 1px solid #F4F4FD;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
             0px 1px 1px rgba(46, 47, 66, 0.16),
             0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -375,7 +374,6 @@ section:nth-child(2) ul li {
 .portfolio-image-wrap {
     position: relative;
     overflow: hidden;
-    /* Ховаємо все, що виходить за межі */
 }
 
 /* Стилі для оверлею */
@@ -417,7 +415,7 @@ position: absolute;
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 0;
 }
 
 .portfolio-item-category {
@@ -429,6 +427,10 @@ position: absolute;
     margin-bottom: 0;
 }
 
+.portfolio .section {
+    padding-bottom: 120px;
+}
+
 /* Футер */
 .footer {
     background-color: #2E2F42;
@@ -438,6 +440,7 @@ position: absolute;
 .footer-logo {
     display: inline-block;
     color: #4D5AE5;
+    margin-bottom: 16px;
 }
 
 .footer-logo span {
@@ -469,6 +472,7 @@ position: absolute;
 .social-list {
     display: flex;
     justify-content: center;
+    margin-top: 0;
 }
 
 .footer .social-list {
@@ -479,3 +483,4 @@ position: absolute;
 .footer-social-link:focus {
     background-color: #31d0aa;
 }
+
