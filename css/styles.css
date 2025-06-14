@@ -43,7 +43,7 @@ img {
 
 .section {
     padding-top: 120px;
-    padding-bottom: 0;
+    padding-bottom: 120px;
 }
 
 p {
@@ -427,9 +427,6 @@ position: absolute;
     margin-bottom: 0;
 }
 
-.portfolio .section {
-    padding-bottom: 120px;
-}
 
 /* Футер */
 .footer {
